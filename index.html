@@ -1,77 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Arithmetic Game – Online Speed Drill</title>
-    <link href='/app.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Nolan Mass</title>
+
+    <style>
+      body {
+        background-color: #1b1c1c;
+      }
+      .text {
+        color: #c0c0c0;
+        font-family: Courier;
+      }
+      h1 {
+        color: #1058ff;
+        text-align: center;
+      }
+      h2 {
+        color: #2fff12
+      }
+
+      /* Add a black background color to the top navigation */
+      .topnav {
+        text-align: center;
+        overflow: hidden;
+      }
+
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        color: #2fff12;
+        text-align: center;
+        padding: 14px 48px;
+        text-decoration: none;
+        /* font-family: Courier; */
+        font-size: 17px;
+      }
+
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #3b3c40;
+      }
+    </style>
   </head>
   <body>
-    <div id='welcome'>
-      <h1>Arithmetic Game</h1>
-      <p>The Arithmetic Game is a fast-paced speed drill where you are given two minutes to solve as many arithmetic problems as you can.</p>
-      <p>If you have any questions, please contact <script type="text/javascript">document.write("<n uers=\"znvygb:nevguzrgvp\100mrgnznp\056pbz\">nevguzrgvp\100mrgnznp\056pbz<\057n>".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>.</p>
-      <form action='/game' class='game-options' method='post'>
-        <dl>
-          <dt>
-            <label>
-              <input checked name='add' type='checkbox'>
-              Addition
-            </label>
-          </dt>
-          <dd>Range: (<input type="text" name="add_left_min" id="add_left_min" value="2"> to <input type="text" name="add_left_max" id="add_left_max" value="100">) +
-	  (<input type="text" name="add_right_min" id="add_right_min" value="2"> to <input type="text" name="add_right_max" id="add_right_max" value="100">)</dd>
-          <dt>
-            <label>
-              <input checked name='sub' type='checkbox'>
-              Subtraction
-            </label>
-          </dt>
-          <dd>Addition problems in reverse.</dd>
-          <dt>
-            <label>
-              <input checked name='mul' type='checkbox'>
-              Multiplication
-            </label>
-          </dt>
-          <dd>Range: (<input type="text" name="mul_left_min" id="mul_left_min" value="2"> to <input type="text" name="mul_left_max" id="mul_left_max" value="12">) ×
-	  (<input type="text" name="mul_right_min" id="mul_right_min" value="2"> to <input type="text" name="mul_right_max" id="mul_right_max" value="100">)</dd>
-          <dt>
-            <label>
-              <input checked name='div' type='checkbox'>
-              Division
-            </label>
-          </dt>
-          <dd>Multiplication problems in reverse.</dd>
-        </dl>
-        <p>
-          Duration:
-          <select name='duration'>
-            <option value='30'>30 seconds</option>
-            <option value='60'>60 seconds</option>
-            <option selected value='120'>120 seconds</option>
-            <option value='300'>300 seconds</option>
-            <option value='600'>600 seconds</option>
-          </select>
-        </p>
-        <input type='submit' value='Start'>
-      </form>
+    <h1>Nolan Mass</h1>
+
+    <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#random_math">Random Math</a>
+      <a href="#resume">Resume</a>
     </div>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
-    <script src='/app.js'></script>
-    <script type="text/javascript">
+
+    <p class=text>I am a rising senior at the School of Computer Science at Carnegie Mellon University.</p>
     
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-4847317-1']);
-      _gaq.push(['_trackPageview']);
-    
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    
-    </script>
+    <h2 class=text>Projects</h2>
+    <ul>
+      <li class=text>Project 1</li>
+      <li class=text>Project 2</li>
+      <li class=text>Project 3</li>
+    </ul>
   </body>
 </html>
-
-
-
